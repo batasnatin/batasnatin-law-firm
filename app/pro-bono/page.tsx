@@ -162,7 +162,7 @@ export default function ProBonoPage() {
                 <AlertCircle className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
                 <div className="text-sm text-blue-900">
                   <strong>Please Note:</strong> This eligibility checker provides a preliminary assessment only.
-                  Final qualification will be determined during your consultation where we'll review your
+                  Final qualification will be determined during your consultation where we&apos;ll review your
                   complete documentation and circumstances. All information is confidential.
                 </div>
               </div>

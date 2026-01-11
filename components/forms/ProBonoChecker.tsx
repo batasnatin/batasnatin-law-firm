@@ -75,10 +75,10 @@ const incomeRanges = [
 
 export default function ProBonoChecker() {
   const [currentStep, setCurrentStep] = useState(0);
-  const [answers, setAnswers] = useState<Record<string, any>>({});
+  const [answers, setAnswers] = useState<Record<string, string | number | boolean>>({});
   const [showResult, setShowResult] = useState(false);
 
-  const handleAnswer = (questionId: string, answer: any) => {
+  const handleAnswer = (questionId: string, answer: string | number | boolean) => {
     setAnswers({ ...answers, [questionId]: answer });
 
     if (currentStep < questions.length - 1) {
