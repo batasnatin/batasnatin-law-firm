@@ -3,14 +3,11 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
 import { 
   Phone, 
   Mail, 
   Menu, 
-  X, 
   ChevronDown,
-  Scale,
   Clock
 } from "lucide-react";
 import { Button } from "@/components/ui/button";

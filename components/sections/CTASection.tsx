@@ -39,7 +39,7 @@ export default function CTASection() {
             Ready to Discuss Your Case?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Don't wait to get the legal help you need. Our experienced attorneys are ready 
+            Don&apos;t wait to get the legal help you need. Our experienced attorneys are ready 
             to fight for your rights and deliver the results you deserve.
           </p>
 

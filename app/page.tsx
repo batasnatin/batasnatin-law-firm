@@ -25,31 +25,31 @@ export default function HomePage() {
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               With decades of combined experience and a proven track record of success, 
-              we're the law firm you can count on.
+              we&apos;re the law firm you can count on.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                icon: Award,
-                title: "Award-Winning",
-                description: "Recognized as one of the top law firms in the region"
+                icon: Scale,
+                title: "All Court Levels",
+                description: "From filing to the Supreme Court - we handle cases at every level"
               },
               {
                 icon: Users,
-                title: "Client-Focused",
-                description: "Your goals are our priority, always"
+                title: "Pro Bono Services",
+                description: "Free legal representation for qualified laborers - justice for all"
               },
               {
-                icon: Scale,
-                title: "Proven Results",
-                description: "$500M+ recovered for our clients"
+                icon: Award,
+                title: "Expert Litigator",
+                description: "30+ cases handled in first year alone - experienced advocacy"
               },
               {
                 icon: Clock,
-                title: "Available 24/7",
-                description: "We're here when you need us most"
+                title: "BATASnatin LIVE",
+                description: "Free daily legal advice at 8PM - accessible legal education"
               }
             ].map((feature, index) => {
               const Icon = feature.icon;

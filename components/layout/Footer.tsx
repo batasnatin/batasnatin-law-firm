@@ -11,12 +11,10 @@ import {
   Linkedin,
   Instagram,
   Youtube,
-  Scale,
   ArrowRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Separator } from "@/components/ui/separator";
 import { siteConfig, navigationLinks, practiceAreas } from "@/lib/constants/site";
 
 export default function Footer() {

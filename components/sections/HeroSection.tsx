@@ -9,9 +9,9 @@ import { ArrowRight, Phone, Shield, Award, Users } from "lucide-react";
 import { siteConfig } from "@/lib/constants/site";
 
 const stats = [
-  { icon: Shield, value: "25+", label: "Years Experience" },
-  { icon: Users, value: "10,000+", label: "Clients Served" },
-  { icon: Award, value: "500M+", label: "Won for Clients" },
+  { icon: Shield, value: "All Levels", label: "Filing to Supreme Court" },
+  { icon: Users, value: "Pro Bono", label: "Free for Laborers" },
+  { icon: Award, value: "30+", label: "Cases First Year" },
 ];
 
 export default function HeroSection() {
@@ -67,7 +67,7 @@ export default function HeroSection() {
               className="inline-flex items-center gap-2 bg-white/10 dark:bg-primary/10 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-full mb-4 sm:mb-6"
             >
               <span className="w-2 h-2 bg-secondary dark:bg-primary rounded-full animate-pulse" />
-              <span className="text-xs sm:text-sm font-medium">Trusted Legal Excellence Since 1998</span>
+              <span className="text-xs sm:text-sm font-medium">Excellence is our Standard</span>
             </motion.div>
 
             <motion.h1
@@ -76,8 +76,8 @@ export default function HeroSection() {
               transition={{ delay: 0.3 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-serif mb-4 sm:mb-6 leading-tight"
             >
-              Fighting For Your
-              <span className="block text-secondary dark:text-primary mt-1 sm:mt-2">Rights & Justice</span>
+              Justice Should Be
+              <span className="block text-secondary dark:text-primary mt-1 sm:mt-2">Affordable To Everyone</span>
             </motion.h1>
 
             <motion.p
@@ -86,8 +86,8 @@ export default function HeroSection() {
               transition={{ delay: 0.4 }}
               className="text-base sm:text-lg lg:text-xl text-white/90 dark:text-muted-foreground mb-6 sm:mb-8 leading-relaxed"
             >
-              {siteConfig.description} We provide compassionate, aggressive representation 
-              to protect your interests and secure the best possible outcome for your case.
+              Full-service law firm in Taguig City handling cases from filing to the Supreme Court.
+              We offer pro bono services for laborers, free daily legal advice, and top-notch representation for all.
             </motion.p>
 
             <motion.div
@@ -96,13 +96,13 @@ export default function HeroSection() {
               transition={{ delay: 0.5 }}
               className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12"
             >
-              <Button 
-                asChild 
-                size="lg" 
+              <Button
+                asChild
+                size="lg"
                 className="bg-secondary hover:bg-secondary/90 dark:bg-primary dark:hover:bg-primary/90 text-primary dark:text-background font-semibold px-6 sm:px-8"
               >
                 <Link href="/contact">
-                  Get Free Consultation
+                  Book Consultation (₱2,500)
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -164,10 +164,10 @@ export default function HeroSection() {
                       <div className="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent rounded-full blur-2xl" />
                     </div>
                     <h3 className="text-2xl font-serif font-bold mb-2 text-white dark:text-foreground">
-                      Your Legal Shield
+                      BATASnatin Law Firm
                     </h3>
                     <p className="text-white/80 dark:text-muted-foreground">
-                      Protecting Your Rights Since 1998
+                      Excellence is our Standard
                     </p>
                   </div>
                 </div>

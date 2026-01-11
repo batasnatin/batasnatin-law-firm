@@ -17,29 +17,41 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
-    "law firm",
-    "legal services",
-    "attorney",
-    "lawyer",
-    "legal advice",
-    "personal injury",
-    "family law",
-    "criminal defense",
-    "business law",
-    "real estate",
-    "estate planning"
+    "lawyer Philippines",
+    "law firm Philippines",
+    "Taguig lawyer",
+    "Taguig law firm",
+    "labor lawyer Philippines",
+    "pro bono legal services Philippines",
+    "free legal advice Philippines",
+    "BATASnatin",
+    "Atty. Libayan",
+    "labor law",
+    "illegal dismissal",
+    "NLRC",
+    "DOLE",
+    "family law Philippines",
+    "annulment Philippines",
+    "civil litigation Philippines",
+    "criminal defense Philippines",
+    "real estate law Philippines",
+    "notary public Philippines",
+    "BATASnatin LIVE",
+    "Supreme Court lawyer",
+    "Metro Manila lawyer"
   ],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_PH",
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
@@ -72,10 +84,11 @@ export const metadata: Metadata = {
     },
   },
   manifest: "/site.webmanifest",
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+  other: {
+    "geo.region": "PH-00",
+    "geo.placename": "Taguig City",
+    "geo.position": "14.5176;121.0489",
+    "ICBM": "14.5176, 121.0489",
   },
 };
 
@@ -85,7 +98,63 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+    <html lang="en-PH" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LegalService",
+              "@id": siteConfig.url,
+              "name": siteConfig.name,
+              "description": siteConfig.description,
+              "url": siteConfig.url,
+              "telephone": siteConfig.contact.phone,
+              "email": siteConfig.contact.email,
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": `${siteConfig.contact.address.suite}, ${siteConfig.contact.address.street}`,
+                "addressLocality": siteConfig.contact.address.city,
+                "addressRegion": siteConfig.contact.address.state,
+                "postalCode": siteConfig.contact.address.zip,
+                "addressCountry": "PH"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "14.5176",
+                "longitude": "121.0489"
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "09:00",
+                  "closes": "17:00"
+                }
+              ],
+              "priceRange": "₱₱",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Philippines"
+              },
+              "knowsAbout": [
+                "Labor Law",
+                "Family Law",
+                "Civil Law",
+                "Criminal Defense",
+                "Real Estate Law",
+                "Environmental Law",
+                "Corporation Law"
+              ],
+              "sameAs": [
+                siteConfig.social.facebook,
+                siteConfig.social.youtube
+              ]
+            })
+          }}
+        />
+      </head>
       <body className={`${inter.variable} ${playfair.variable} antialiased min-h-screen flex flex-col`}>
         <ThemeProvider
           attribute="class"

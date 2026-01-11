@@ -1,39 +1,40 @@
 export const siteConfig = {
   name: "BATASnatin Law Firm",
   shortName: "BATASnatin",
-  description: "Premier legal services with decades of experience. Trusted by thousands of clients nationwide.",
-  tagline: "Justice. Integrity. Excellence.",
+  description: "Excellence is our Standard. Top-notch legal services from the Philippines, handling cases from filing to Supreme Court.",
+  tagline: "Excellence is our Standard",
   url: "https://firm.batasnatin.com",
   ogImage: "/images/logo.png",
-  
+
   contact: {
-    phone: "+1 (555) 123-4567",
-    emergencyPhone: "+1 (555) 987-6543",
+    phone: "+63 915 954 6080",
+    emergencyPhone: "+63 2 359 4203",
     email: "info@batasnatin.com",
     address: {
-      street: "123 Justice Boulevard",
-      suite: "Suite 1000",
-      city: "Manila",
+      street: "31 General Luna Street",
+      suite: "2nd Floor, LC Building (Above Goldilocks)",
+      city: "Taguig City",
       state: "Metro Manila",
-      zip: "1000",
-      country: "Philippines"
+      zip: "1630",
+      country: "Philippines",
+      landmark: "Fronting Taguig City Hall"
     },
     hours: {
-      weekdays: "Monday - Friday: 9:00 AM - 6:00 PM",
-      saturday: "Saturday: 10:00 AM - 2:00 PM",
-      sunday: "Sunday: Closed",
-      holidays: "Closed on Public Holidays"
+      weekdays: "Monday - Friday: 9:00 AM - 5:00 PM",
+      saturday: "Saturday: By Appointment",
+      sunday: "Sunday: By Appointment",
+      holidays: "Weekends and holidays by appointment. Contact us to schedule."
     }
   },
-  
+
   social: {
-    facebook: "https://facebook.com/batasnatin",
+    facebook: "https://facebook.com/BATASnatin",
     twitter: "https://twitter.com/batasnatin",
     linkedin: "https://linkedin.com/company/batasnatin",
     instagram: "https://instagram.com/batasnatin",
-    youtube: "https://youtube.com/@batasnatin"
+    youtube: "https://youtube.com/channel/UCVyNJy0q_Q2XB873gEkmgjQ"
   },
-  
+
   legal: {
     privacyPolicy: "/privacy-policy",
     termsOfService: "/terms-of-service",
@@ -54,34 +55,37 @@ export const navigationLinks = [
       { title: "Our Firm", href: "/about" },
       { title: "Our Team", href: "/attorneys" },
       { title: "Mission & Values", href: "/about#mission" },
-      { title: "Awards & Recognition", href: "/about#awards" },
+      { title: "Our Story", href: "/about#story" },
     ]
   },
   {
     title: "Practice Areas",
     href: "/practice-areas",
     subItems: [
-      { title: "Personal Injury", href: "/practice-areas/personal-injury" },
+      { title: "Labor Law", href: "/practice-areas/labor-law", badge: "Pro Bono Available" },
       { title: "Family Law", href: "/practice-areas/family-law" },
+      { title: "Civil Law", href: "/practice-areas/civil-law" },
       { title: "Criminal Defense", href: "/practice-areas/criminal-defense" },
-      { title: "Business Law", href: "/practice-areas/business-law" },
       { title: "Real Estate", href: "/practice-areas/real-estate" },
-      { title: "Estate Planning", href: "/practice-areas/estate-planning" },
+      { title: "Environmental Law", href: "/practice-areas/environmental-law" },
+      { title: "Corporation Law", href: "/practice-areas/corporation-law" },
+      { title: "Notarization", href: "/practice-areas/notarization" },
+    ]
+  },
+  {
+    title: "Free Services",
+    href: "/free-services",
+    badge: "Free",
+    subItems: [
+      { title: "BATASnatin LIVE", href: "/batasnatin-live", description: "Free daily legal advice at 8PM" },
+      { title: "Pro Bono (Laborers)", href: "/pro-bono", description: "Free representation from filing to Supreme Court" },
+      { title: "Free Legal Advice", href: "/free-legal-advice", description: "Ask questions, get answers" },
+      { title: "FAQs", href: "/faqs" },
     ]
   },
   {
     title: "Attorneys",
     href: "/attorneys",
-  },
-  {
-    title: "Resources",
-    href: "/resources",
-    subItems: [
-      { title: "Blog", href: "/resources/blog" },
-      { title: "Legal Guides", href: "/resources/guides" },
-      { title: "FAQs", href: "/resources/faqs" },
-      { title: "Legal Calculators", href: "/resources/calculators" },
-    ]
   },
   {
     title: "Contact",
@@ -91,142 +95,144 @@ export const navigationLinks = [
 
 export const practiceAreas = [
   {
-    id: "personal-injury",
-    title: "Personal Injury",
-    description: "Comprehensive legal representation for accident victims seeking compensation for injuries and damages.",
-    icon: "Shield",
+    id: "labor-law",
+    title: "Labor Law",
+    description: "Expert representation in labor disputes from DOLE to Supreme Court. Pro bono services available for qualified laborers.",
+    icon: "Briefcase",
+    badge: "Pro Bono Available",
     features: [
-      "Car Accidents",
-      "Slip and Fall",
-      "Medical Malpractice",
-      "Workplace Injuries",
-      "Product Liability",
-      "Wrongful Death"
+      "Illegal Dismissal",
+      "Constructive Dismissal",
+      "Non-payment of Wages",
+      "NLRC Representation",
+      "Labor Standards",
+      "SSS/PhilHealth Issues"
     ],
-    image: "/images/practice-areas/personal-injury.jpg"
+    image: "/images/practice-areas/labor-law.jpg"
   },
   {
     id: "family-law",
     title: "Family Law",
-    description: "Compassionate guidance through divorce, custody, adoption, and other family legal matters.",
+    description: "Compassionate guidance through annulment, custody, adoption, and other family legal matters under Philippine law.",
     icon: "Users",
     features: [
-      "Divorce & Separation",
-      "Child Custody",
-      "Child Support",
-      "Adoption",
-      "Prenuptial Agreements",
-      "Domestic Violence"
+      "Annulment of Marriage",
+      "Legal Separation",
+      "Child Custody & Support",
+      "Adoption (Domestic & International)",
+      "VAWC Cases",
+      "Paternity Cases"
     ],
     image: "/images/practice-areas/family-law.jpg"
   },
   {
+    id: "civil-law",
+    title: "Civil Law & Litigation",
+    description: "Comprehensive civil litigation services handling all types of civil cases in Philippine courts.",
+    icon: "Scale",
+    features: [
+      "Collection of Debts",
+      "Unlawful Detainer",
+      "Forcible Entry",
+      "Recovery of Property",
+      "Damages (Actual, Moral, Exemplary)",
+      "Breach of Contract"
+    ],
+    image: "/images/practice-areas/civil-law.jpg"
+  },
+  {
     id: "criminal-defense",
     title: "Criminal Defense",
-    description: "Strong defense representation for individuals facing criminal charges at all levels.",
-    icon: "Gavel",
+    description: "Strong defense representation for individuals facing criminal charges under the Revised Penal Code and special laws.",
+    icon: "Shield",
     features: [
-      "DUI/DWI Defense",
-      "Drug Crimes",
-      "Assault & Battery",
-      "Theft Crimes",
-      "White Collar Crimes",
-      "Federal Crimes"
+      "BP 22 (Bouncing Checks)",
+      "RA 9165 (Drug Cases)",
+      "Robbery & Theft",
+      "Estafa & Fraud",
+      "Physical Injuries",
+      "Homicide & Murder"
     ],
     image: "/images/practice-areas/criminal-defense.jpg"
   },
   {
-    id: "business-law",
-    title: "Business Law",
-    description: "Strategic legal counsel for businesses from formation through dissolution and everything in between.",
-    icon: "Briefcase",
-    features: [
-      "Business Formation",
-      "Contract Drafting",
-      "Mergers & Acquisitions",
-      "Employment Law",
-      "Intellectual Property",
-      "Business Litigation"
-    ],
-    image: "/images/practice-areas/business-law.jpg"
-  },
-  {
     id: "real-estate",
-    title: "Real Estate",
-    description: "Expert guidance in residential and commercial real estate transactions and disputes.",
+    title: "Real Estate Law",
+    description: "Expert guidance in property transactions, title disputes, and land registration under Philippine law.",
     icon: "Home",
     features: [
-      "Property Purchase/Sale",
-      "Lease Agreements",
-      "Title Issues",
-      "Zoning & Land Use",
-      "Construction Law",
-      "Foreclosure Defense"
+      "Annulment of TCT",
+      "Reconveyance",
+      "Quieting of Title",
+      "Land Registration (LRA)",
+      "Ejectment Cases",
+      "Boundary Disputes"
     ],
     image: "/images/practice-areas/real-estate.jpg"
   },
   {
-    id: "estate-planning",
-    title: "Estate Planning",
-    description: "Protect your legacy with comprehensive estate planning and probate services.",
+    id: "environmental-law",
+    title: "Environmental Law",
+    description: "Protection of environmental rights through Writ of Kalikasan and DENR proceedings.",
+    icon: "Leaf",
+    features: [
+      "Writ of Kalikasan",
+      "ECC Applications",
+      "DENR Cases",
+      "Mining Disputes",
+      "Pollution Cases",
+      "Protected Areas"
+    ],
+    image: "/images/practice-areas/environmental-law.jpg"
+  },
+  {
+    id: "corporation-law",
+    title: "Corporation Law",
+    description: "Strategic legal counsel for businesses from SEC registration to intra-corporate disputes.",
+    icon: "Building",
+    features: [
+      "SEC Registration",
+      "Corporate Litigation",
+      "Intra-Corporate Disputes",
+      "Partnership Formation",
+      "BIR Compliance",
+      "Business Contracts"
+    ],
+    image: "/images/practice-areas/corporation-law.jpg"
+  },
+  {
+    id: "notarization",
+    title: "Notarization & Document Services",
+    description: "Professional notarization of all legal documents and preparation of various legal instruments.",
     icon: "FileText",
     features: [
-      "Wills & Trusts",
-      "Estate Administration",
-      "Probate",
-      "Power of Attorney",
-      "Healthcare Directives",
-      "Asset Protection"
+      "Affidavits",
+      "Contracts & Agreements",
+      "Deeds of Sale",
+      "Special Power of Attorney",
+      "Acknowledgements",
+      "Certified True Copies"
     ],
-    image: "/images/practice-areas/estate-planning.jpg"
+    image: "/images/practice-areas/notarization.jpg"
   }
 ];
 
 export const teamMembers = [
   {
-    id: "juan-dela-cruz",
-    name: "Juan Dela Cruz",
-    position: "Managing Partner",
-    bio: "With over 25 years of experience in litigation and corporate law, Juan leads our firm with unwavering dedication to client success.",
+    id: "ranny-libayan",
+    name: "Atty. Ranny Randolf B. Libayan",
+    position: "Founder & Managing Partner",
+    bio: "Public-schooled from elementary through college, Atty. Libayan founded BATASnatin Law Firm driven by the belief that justice should be affordable to everyone. As a working student who never owned more than 10 law books, he built the Philippines' first comprehensive online legal resource (BATASnatin.com) and began handling cases even before passing the bar. He litigated 30+ cases in his first year alone. His success is measured not by awards or prestigious schools, but by the testimony of clients served and his continuing pursuit to keep the legal profession noble.",
     education: [
-      "J.D., University of the Philippines College of Law",
-      "B.A. Political Science, Ateneo de Manila University"
+      "Juris Doctor, University of Baguio",
+      "Bachelor of Environmental Science, Benguet State University"
     ],
-    barAdmissions: ["Philippines Bar, 1998", "New York Bar, 2005"],
-    practiceAreas: ["Business Law", "Real Estate", "Estate Planning"],
-    email: "juan.delacruz@batasnatin.com",
-    phone: "+1 (555) 123-4568",
-    image: "/images/attorneys/juan-dela-cruz.jpg"
-  },
-  {
-    id: "maria-santos",
-    name: "Maria Santos",
-    position: "Senior Partner",
-    bio: "Maria specializes in family law and has helped thousands of families navigate complex legal challenges with compassion and expertise.",
-    education: [
-      "J.D., Harvard Law School",
-      "B.A. Sociology, University of Santo Tomas"
-    ],
-    barAdmissions: ["Philippines Bar, 2003", "California Bar, 2008"],
-    practiceAreas: ["Family Law", "Estate Planning"],
-    email: "maria.santos@batasnatin.com",
-    phone: "+1 (555) 123-4569",
-    image: "/images/attorneys/maria-santos.jpg"
-  },
-  {
-    id: "roberto-garcia",
-    name: "Roberto Garcia",
-    position: "Partner",
-    bio: "Roberto is a fierce advocate for injury victims and has secured millions in compensation for his clients.",
-    education: [
-      "J.D., Yale Law School",
-      "B.S. Engineering, MIT"
-    ],
-    barAdmissions: ["Philippines Bar, 2005", "Texas Bar, 2010"],
-    practiceAreas: ["Personal Injury", "Criminal Defense"],
-    email: "roberto.garcia@batasnatin.com",
-    phone: "+1 (555) 123-4570",
-    image: "/images/attorneys/roberto-garcia.jpg"
+    barAdmissions: ["Philippines Bar"],
+    practiceAreas: ["Labor Law", "Litigation", "Environmental Law", "Pro Bono Services"],
+    specialties: "Founder of BATASnatin.com, Pro Bono Advocate, Expert Litigator handling cases from filing to Supreme Court",
+    email: "atty.libayan@batasnatin.com",
+    phone: "+63 915 954 6080",
+    image: "/images/attorneys/atty-libayan.jpg"
   }
 ];
 

@@ -36,7 +36,7 @@ export default function TestimonialsSection() {
             What Our Clients Say
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our clients have to say about 
+            Don&apos;t just take our word for it. Here&apos;s what our clients have to say about 
             their experience working with our legal team.
           </p>
         </motion.div>
@@ -72,7 +72,7 @@ export default function TestimonialsSection() {
 
                     {/* Content */}
                     <p className="text-xl lg:text-2xl font-serif text-foreground mb-8 leading-relaxed">
-                      "{testimonials[currentIndex].content}"
+                      &ldquo;{testimonials[currentIndex].content}&rdquo;
                     </p>
 
                     {/* Author */}
